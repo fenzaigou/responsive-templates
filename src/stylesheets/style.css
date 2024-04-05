@@ -747,10 +747,18 @@ footer {
   width: 100%;
   flex: 0 0 auto;
   list-style: none;
-  margin-inline: 2rem;
+  margin-inline: 1rem;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 40em) {
+  .slider > * {
+    width: 50%;
+  }
+}
+@media (min-width: 60em) {
+  .slider > * {
+    width: 33.3%;
+  }
 }
 
 .a11y-slider-autoplay {
@@ -774,7 +782,4 @@ footer {
 .a11y-slider-dots .slider-number.active {
   background-color: var(--clr-accent-400);
 }
-/* .a11y-slider-container button:is(.a11y-slider-prev, .a11y-slider-next) {
-  display: none;
-} */
 /* --- end: Slider Styling --- */

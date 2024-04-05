@@ -6,15 +6,14 @@ const slider = new A11YSlider(document.querySelector(".slider"), {
   arrows: false,
   autoplay: true,
   autoplaySpeed: 5000,
-  slidesToShow: 1,
   skipBtn: false,
   autoplayHoverPause: false,
+  swipe: false,
   customPaging: function (index, a11ySlider) {
     return '<button class="slider-number"></button>';
   },
   responsive: {
     800: {
-      slidesToShow: 2,
       dots: false,
       centerMode: true,
     },
